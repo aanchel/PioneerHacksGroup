@@ -15,13 +15,13 @@
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:text="@string/button_send"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/incidentInput"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/editText2" />
+        app:layout_constraintStart_toEndOf="@+id/incidentInput" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/incidentInput"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"

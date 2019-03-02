@@ -8,8 +8,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class InputReport extends AppCompatActivity {
+    private EditText incident;
+    private Button send;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,23 @@ public class InputReport extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+            }
+        });
+
+        incident = (EditText) findViewById(R.id.incidentInput);
+        send = (Button) findViewById(R.id.btnSend);
+
+        sendFunctionality();
+    }
+
+    private void sendFunctionality() {
+        send.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String report = send.getText().toString().trim();
+                //Incident incident_report = new Incident();
+
+                //PioneerHacksDos.
             }
         });
     }
