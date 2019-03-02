@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">PioneerHacksII</string>
     <string name="action_settings">Settings</string>
+    <string name="enter_email">Enter your email</string>
+    <string name="button_send">Send</string>
+    <string name="enter_email">Enter your email</string>
+    <string name="enter_message">Type your report here.</string>
 </resources>
