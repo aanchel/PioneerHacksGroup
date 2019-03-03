@@ -102,10 +102,10 @@ public class InputReport extends AppCompatActivity {
             }
         });
 
-        //incident = (EditText) findViewById(R.id.incidentInput);
-        //send = (Button) findViewById(R.id.btnSend);
+        //incident = (EditText) findViewById(R.id.);
+        send = (Button) findViewById(R.id.btnSend);
 
-        //sendFunctionality();
+        sendFunctionality();
     }
 
     private void sendFunctionality() {
