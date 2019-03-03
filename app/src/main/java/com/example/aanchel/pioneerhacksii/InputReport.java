@@ -15,10 +15,11 @@ import java.util.ArrayList;
 
 
 public class InputReport extends AppCompatActivity {
-//    private EditText incidentDescr;
-//    private EditText incidentLocation;
-//    private EditText incidentDist;
-    //private EditText incident
+    private EditText incidentDescr;
+    private EditText incidentLocation;
+    private EditText incidentDist;
+    private EditText incidentType;
+    private EditText incident;
     private Button send;
 
     public static ArrayList<Incident> types = new ArrayList<Incident>();
@@ -118,7 +119,6 @@ public class InputReport extends AppCompatActivity {
             public void onClick(View v) {
                 String report = send.getText().toString().trim();
                 //Incident incident_report = new Incident();
-
 
             }
         });

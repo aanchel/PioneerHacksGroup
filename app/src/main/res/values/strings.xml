@@ -12,4 +12,5 @@
     <string name="incidentDescrRobbery">Enter \"robbery\" into description</string>
     <string name="incidentDescrKid">Enter \"kidnapping\" into description</string>
     <string name="instructionDescr">Do whichever of the following is most applicable:</string>
+    <string name="enter_story">Tell what happened during the incident</string>
 </resources>
