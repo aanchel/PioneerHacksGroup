@@ -15,7 +15,10 @@ import java.util.ArrayList;
 
 
 public class InputReport extends AppCompatActivity {
-    private EditText incident;
+//    private EditText incidentDescr;
+//    private EditText incidentLocation;
+//    private EditText incidentDist;
+    //private EditText incident
     private Button send;
 
     public static ArrayList<Incident> types = new ArrayList<Incident>();
@@ -102,10 +105,11 @@ public class InputReport extends AppCompatActivity {
             }
         });
 
-        //incident = (EditText) findViewById(R.id.);
-        send = (Button) findViewById(R.id.btnSend);
+        //incidentDescr = (EditText) findViewById(R.id.incidentDesc);
+        //incidentLocation = (EditText) findViewById(R.id.incidentLocation);
+        //send = (Button) findViewById(R.id.btnSend);
 
-        sendFunctionality();
+        //sendFunctionality();
     }
 
     private void sendFunctionality() {
