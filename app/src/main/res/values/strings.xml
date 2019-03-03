@@ -4,4 +4,12 @@
     <string name="enter_email">Enter your email</string>
     <string name="button_send">Send</string>
     <string name="enter_message">Type your report here.</string>
+    <string name="enter_description">Enter the description of the incident</string>
+    <string name="enter_location">Enter the location as City, State</string>
+    <string name="enter_distance">Enter how far away the incident is from your location</string>
+    <string name="incidentDescrHomicide">Enter \"homicide\" into description</string>
+    <string name="incidentDescrAnB">Enter \"assault_battery\" into description</string>
+    <string name="incidentDescrRobbery">Enter \"robbery\" into description</string>
+    <string name="incidentDescrKid">Enter \"kidnapping\" into description</string>
+    <string name="instructionDescr">Do whichever of the following is most applicable:</string>
 </resources>
