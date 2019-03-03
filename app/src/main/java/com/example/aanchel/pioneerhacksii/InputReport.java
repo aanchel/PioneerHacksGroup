@@ -79,14 +79,17 @@ public class InputReport extends AppCompatActivity {
         for (int i = 0; i < robbery.size(); i++) {
             System.out.print("\t" + robbery.get(i).toString());
         }
+        sortHeap(assault_battery);
         System.out.println("Assaults/Battery Incidents near you: \n");
         for (int i = 0; i < assault_battery.size(); i++) {
             System.out.print("\t" + assault_battery.get(i).toString());
         }
+        sortHeap(kidnapping);
         System.out.println("Kidnapping Incidents near you: \n");
         for (int i = 0; i < kidnapping.size(); i++) {
             System.out.print("\t" + kidnapping.get(i).toString());
         }
+        sortHeap(homicide);
         System.out.println("Homicide Incidents near you: \n");
         for (int i = 0; i < homicide.size(); i++) {
             System.out.print("\t" + homicide.get(i).toString());
