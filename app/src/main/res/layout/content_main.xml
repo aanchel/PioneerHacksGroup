@@ -21,7 +21,7 @@
         app:layout_constraintStart_toEndOf="@+id/email" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/incidentLocation"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginEnd="8dp"
@@ -30,8 +30,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="@string/enter_location"
         android:inputType="textPersonName"
-        android:text="@string/enter_location"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,23 +45,23 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"
         android:ems="10"
+        android:hint="@string/enter_email"
         android:inputType="textEmailAddress"
-        android:text="@string/enter_email"
         app:layout_constraintEnd_toStartOf="@+id/button"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/incidentDesc"
+        android:id="@+id/incidentType"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="Enter incident type"
         android:inputType="textPersonName"
-        android:text="@string/enter_description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -98,7 +98,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/instructionDescr"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/incidentLocation" />
 
     <TextView
         android:id="@+id/textView5"
@@ -130,15 +130,15 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="@string/enter_distance"
         android:inputType="textPersonName"
-        android:text="@string/enter_distance"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/incidentDesc" />
+        app:layout_constraintTop_toBottomOf="@+id/incidentType" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/incidentDescr"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -147,10 +147,28 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="@string/enter_story"
         android:inputType="textPersonName"
-        android:text="@string/enter_story"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/incidentDist" />
+
+    <Button
+        android:id="@+id/btnIncidents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Incidents List"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incidentDescr"
+        app:layout_constraintVertical_bias="1.0" />
 
 </android.support.constraint.ConstraintLayout>

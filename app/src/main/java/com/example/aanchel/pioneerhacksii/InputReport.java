@@ -1,5 +1,6 @@
 package com.example.aanchel.pioneerhacksii;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -21,6 +22,7 @@ public class InputReport extends AppCompatActivity {
     private EditText incidentType;
     private EditText incident;
     private Button send;
+    private Button btnIncident;
 
     public static ArrayList<Incident> types = new ArrayList<Incident>();
     public static ArrayList<Incident> robbery = new ArrayList<Incident>();
@@ -106,19 +108,40 @@ public class InputReport extends AppCompatActivity {
             }
         });
 
-        //incidentDescr = (EditText) findViewById(R.id.incidentDesc);
-        //incidentLocation = (EditText) findViewById(R.id.incidentLocation);
-        //send = (Button) findViewById(R.id.btnSend);
+        incidentType = (EditText) findViewById(R.id.incidentType);
+        incidentDescr = (EditText) findViewById(R.id.incidentDescr);
+        incidentLocation = (EditText) findViewById(R.id.incidentLocation);
+        incidentDist = (EditText) findViewById(R.id.incidentDist);
 
-        //sendFunctionality();
+        send = (Button) findViewById(R.id.button);
+        btnIncident = (Button) findViewById(R.id.btnIncidents);
+
+        sendFunctionality();
+        btnIncidentFunctionality();
+    }
+
+    private void btnIncidentFunctionality() {
+        btnIncident.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                startActivity(new Intent(InputReport.this, IncidentsPage.class));
+            }
+        });
     }
 
     private void sendFunctionality() {
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String report = send.getText().toString().trim();
-                //Incident incident_report = new Incident();
+                String type = incidentType.getText().toString().trim();
+                String descr = incidentDescr.getText().toString().trim();
+                String location = incidentLocation.getText().toString().trim();
+                long dist = Long.parseLong(incidentDist.getText().toString().trim());
+
+                Incident newIncident = new Incident(dist, descr, type, location);
+                types.add(newIncident);
+
 
             }
         });
